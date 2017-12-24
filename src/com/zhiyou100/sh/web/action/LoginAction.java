@@ -54,6 +54,8 @@ public class LoginAction extends ActionSupport{
 		}
 		return str;
 	}
+	
+	///aaaaa
 	// 注册
 	public String register(){
 		User u = new User();
