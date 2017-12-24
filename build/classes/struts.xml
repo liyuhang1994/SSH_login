@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="p1" namespace="/user" extends="struts-default">
+		<action name="user_*" class="com.zhiyou100.sh.web.action.LoginAction" method="{1}">
+			<result name="success">/success.jsp</result>
+			<result name="fail">/fail.jsp</result>
+			<result name="register_success">/login.jsp</result>
+		</action>
+	</package>
+		
+	</struts>
